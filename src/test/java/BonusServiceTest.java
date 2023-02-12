@@ -1,8 +1,9 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import ru.netology.javaqa55.BonusService;
 
 public class BonusServiceTest {
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateForRegisteredAndUnderLimit() {
         BonusService service = new BonusService();
 
@@ -18,7 +19,7 @@ public class BonusServiceTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateForRegisteredAndOverLimit() {
         BonusService service = new BonusService();
 
@@ -34,7 +35,7 @@ public class BonusServiceTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateForUnregisteredAndUnderLimit() {
         BonusService service = new BonusService();
 
@@ -50,7 +51,7 @@ public class BonusServiceTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void shouldCalculateForUnregisteredAndOverLimit() {
         BonusService service = new BonusService();
 
